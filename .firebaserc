@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "myrccreport"
+  },
+  "targets": {
+    "myrccreport": {
+      "hosting": {
+        "app": [
+          "myrccreport"
+        ],
+        "docs": [
+          "docs-myrccreport"
+        ]
+      }
+    }
+  }
+}

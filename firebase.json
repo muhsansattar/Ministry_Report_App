@@ -1,0 +1,41 @@
+{
+  "hosting": [
+    {
+      "target": "app",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "docs",
+        "Changelog",
+        "public",
+        "src",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "docs",
+      "public": "docs/.vuepress/dist",
+      "ignore": [
+        "firebase.json",
+        "Changelog",
+        "public",
+        "src",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

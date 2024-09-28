@@ -1,0 +1,34 @@
+{
+  "title": "Actions",
+  "disclaimer": "Changes you make to your report are saved automatically to your browser's local storage, hence your information is completely secure.",
+  "importExport": {
+    "heading": "Import/Export",
+    "body": "You can import or export your data in JSON format. With this, you can edit and print your resume from any device. Save this file for later use.",
+    "buttons": {
+      "import": "Import",
+      "export": "Export"
+    }
+  },
+  "emailReport": {
+    "heading": "Send To Pastor",
+    "body": "After clicking this link, ensure you copy the necessary persons manually and attach the pdf report.",
+    "notice": "⚠️You will need to attach the report, so ensure you download the pdf first☝️☝️☝️",
+    "buttons": {
+      "send": "Email Pastor"
+    }
+  },
+  "downloadPDF": {
+    "heading": "Download PDF",
+    "body": "Click on the button below to save a copy of your report.",
+    "buttons": {
+      "pdf": "PDF"
+    }
+  },
+  "reset": {
+    "heading": "Reset Report!",
+    "body": "Be careful, resetting will remove all the information that you have entered. Click on the button below if you're absolutely sure.",
+    "buttons": {
+      "reset": "Reset"
+    }
+  }
+}

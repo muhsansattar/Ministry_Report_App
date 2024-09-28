@@ -1,0 +1,27 @@
+# THIS IS FOR GITHUB ACTIONS
+
+name: Build & Deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build & Deploy To Firebase
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@master
+      - name: Install Project Dependencies
+        run: npm install
+      - name: Build App
+        run: npm run build
+      - name: Build Documentation
+        run: npm run docs:build
+      - name: Deploy to Firebase Hosting
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
